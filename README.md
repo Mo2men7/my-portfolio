@@ -30,13 +30,13 @@ give it a star if you're feeling generous, and come back in a couple of weeks.
 
 It will be fire. I promise 🔥
 
-### Current tech I'm playing with (Jan 2026):
+<!-- ### Current tech I'm playing with (April 2026):
 
 - Next.js 16
 - TypeScript
 - Tailwind CSS
 - Appwrite
-- Cloudinary
+- Cloudinary -->
 
 Recruiters, developers, curious souls — you're all very welcome.  
 Watch or star this repo and you'll literally see me level up in real time.
