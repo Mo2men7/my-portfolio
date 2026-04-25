@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi there 👋 I'm Momen
 
-## Getting Started
+**This repo is my personal playground, lab, testing ground, and future portfolio — all rolled into one.**
 
-First, run the development server:
+⚠️ **Friendly warning (please read):**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+If you're here right now and things look messy, half-broken, or you see:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 57 commits in one day
+- Branches called `wtf`, `test-69`, `pls-work`
+- Files named `temp.js`, `old-old-final.js`, `dont-look-here`
+- Me deleting and rewriting the entire project for the 8th time...
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Please don't judge me (yet) 😂**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repository is literally **my personal space** where I try absolutely everything that comes to my mind:
 
-## Learn More
+- New framework at 3 AM? → lands here
+- Saw a cool animation? → recreating it here
+- Want to switch the entire stack again? → welcome home
+- Random stupid idea? → gets committed, lives for 48 hours, then dies peacefully
 
-To learn more about Next.js, take a look at the following resources:
+Everything here is **work in progress, forever**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The final, clean, "recruiter-friendly", mind-blowing portfolio will come eventually...  
+But right now? This is my home, my chaos, my comfort zone.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+So if you came early, grab a coffee ☕, take a screenshot of the madness,  
+give it a star if you're feeling generous, and come back in a couple of weeks.
 
-## Deploy on Vercel
+It will be fire. I promise 🔥
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Current tech I'm playing with (Jan 2026):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16
+- TypeScript
+- Tailwind CSS
+- Appwrite
+- Cloudinary
+
+Recruiters, developers, curious souls — you're all very welcome.  
+Watch or star this repo and you'll literally see me level up in real time.
+
+Everything here might exist now... or be completely gone in 2 hours.
+
+Welcome to my beautiful mess.  
+It's organized chaos. Trust me.
+
+— Momen Helmy
+(The guy who's gonna dominate 2026, inshallah 🚀)
