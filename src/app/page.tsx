@@ -7,18 +7,18 @@ export default function Home() {
   return (
     <ReactLenis root>
       {/* HERO2 */}
-      <section className="relative h-screen w-full overflow-hidden bg-black text-white">
+      <section className="relative h-screen w-full overflow-hidden bg-foreground text-background">
         <div className="absolute inset-0 -z-10">
           <img
             src="/land2.png"
             alt="Hero"
             className="w-full h-full object-cover scale-110"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-foreground/50" />
         </div>
 
         <div className="relative z-10 flex flex-col justify-between h-full px-8 py-10">
-          <div className="flex justify-between text-xs uppercase tracking-widest text-white/60">
+          <div className="flex justify-between text-xs uppercase tracking-widest text-background/60">
             <span>Momen Helmy</span>
             <span>Front-end Developer</span>
           </div>
@@ -36,7 +36,7 @@ export default function Home() {
               </AnimateText>
 
               <AnimateText delay={0.8}>
-                <p className="text-lg md:text-xl text-white/70 max-w-xl mx-auto">
+                <p className="text-lg md:text-xl text-background/70 max-w-xl mx-auto">
                   I design & build high-performance web interfaces with smooth
                   interactions and clean user experience.
                 </p>
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-between items-end text-sm text-white/60">
+          <div className="flex justify-between items-end text-sm text-background/60">
             <span>Scroll down</span>
 
             <div className="flex flex-col items-end">
@@ -55,15 +55,15 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-          <div className="w-[1px] h-16 bg-white/30 overflow-hidden">
-            <div className="w-full h-1/2 bg-white animate-[scroll_1.5s_ease-in-out_infinite]" />
+          <div className="w-[1px] h-16 bg-background/30 overflow-hidden">
+            <div className="w-full h-1/2 bg-background animate-[scroll_1.5s_ease-in-out_infinite]" />
           </div>
         </div>
       </section>
 
       <section className="flex flex-col justify-between h-screen p-8">
         <AnimateText>
-          <span className="block uppercase text-[0.75rem] font-medium text-black">
+          <span className="block uppercase text-[0.75rem] font-medium text-foreground">
             Design and Strategy for the Vision
           </span>
         </AnimateText>
