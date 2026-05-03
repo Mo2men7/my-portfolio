@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
+import { DM_Mono, Fraunces } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "./components/Navbar";
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-mono",
+});
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-serif" });
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -26,9 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en" className={`dark ${poppins.variable} h-full antialiased`}>
+      <html
+        lang="en"
+        className={`dark ${dmMono.variable} ${fraunces.variable} h-full antialiased`}
+      >
         <body className="min-h-full flex flex-col">
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
         </body>
       </html>
