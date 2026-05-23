@@ -50,17 +50,24 @@ function Info() {
         <img src="/img1.png" alt="" />
       </div>
 
-      <div className="col">
+      <div className="col flex-col gap-[2em] h-screen">
         {/* <AnimateText> */}
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur
-          adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-          placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
-          aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec
-          metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
-          nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
+        <p className="text-lg">
+          Front-End Developer specializing in React, Next.js, and modern web
+          experiences. Passionate about building bold, interactive, and
+          performance-focused interfaces with clean architecture, smooth
+          animations, and attention to detail. I enjoy turning complex ideas
+          into scalable digital products that feel intuitive, modern, and
+          visually impactful.
         </p>
         {/* </AnimateText> */}
+
+        <p className="text-lg">
+          Beyond code and screens, I enjoy chess, running, gym sessions, and
+          meaningful conversations. I believe the best connections don’t always
+          start with work — sometimes they start with shared interests, good
+          energy, and real friendship.
+        </p>
       </div>
     </div>
   );
