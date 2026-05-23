@@ -38,7 +38,7 @@ export default function RootLayout({
           className={`dark ${poppins.className} ${dmMono.variable} ${aalto.variable} ${brentasignature.variable} ${gebuk.variable} ${lovine.variable} ${thought.variable} ${dirtyline.variable} h-full antialiased`}
         >
           <body className="min-h-full flex flex-col">
-            {/* <Navbar /> */}
+            <Navbar />
             {children}
           </body>
         </html>
