@@ -1,25 +1,21 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
-import { DM_Mono, Fraunces } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import ReactLenis from "lenis/react";
+// import { ReactLenis } from "lenis/react";
 
-import { aalto, dirtyline } from "../lib/fonts";
-
-// const dmMono = DM_Mono({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500"],
-//   variable: "--font-mono",
-// });
-// const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-serif" });
-
-// const poppins = Poppins({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700", "800", "900"],
-// });
+import {
+  dmMono,
+  poppins,
+  dirtyline,
+  aalto,
+  brentasignature,
+  gebuk,
+  lovine,
+  thought,
+} from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Momen Helmy",
@@ -36,16 +32,17 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html
-        lang="en"
-        className={`dark ${aalto.variable} ${dirtyline.variable} h-full antialiased`}
-        // className={`dark ${dmMono.variable} ${fraunces.variable} h-full antialiased`}
-      >
-        <body className="min-h-full flex flex-col">
-          {/* <Navbar /> */}
-          {children}
-        </body>
-      </html>
+      <ReactLenis root>
+        <html
+          lang="en"
+          className={`dark ${poppins.className} ${dmMono.variable} ${aalto.variable} ${brentasignature.variable} ${gebuk.variable} ${lovine.variable} ${thought.variable} ${dirtyline.variable} h-full antialiased`}
+        >
+          <body className="min-h-full flex flex-col">
+            {/* <Navbar /> */}
+            {children}
+          </body>
+        </html>
+      </ReactLenis>
     </ViewTransitions>
   );
 }
