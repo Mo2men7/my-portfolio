@@ -19,7 +19,7 @@ function Info() {
         lineClass: "line",
       });
 
-      text.lines.forEach((line: any) => {
+      text?.lines?.forEach((line: any) => {
         const content = line.innerHTML;
         line.innerHTML = `<span>${content}</span>`;
       });
