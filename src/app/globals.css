@@ -5,11 +5,19 @@
   --foreground: #0a0a0a;
 }
 
+.font-aalto {
+  font-family: var(--font-aalto);
+}
+
+.font-dirtyline {
+  font-family: var(--font-dirtyline);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-aalto);
+  --font-mono: var(--font-dirtyline);
 }
 
 * {

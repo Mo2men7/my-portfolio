@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactLenis } from "lenis/react";
-import AnimateText from "./components/AnimateText";
+import AnimateText from "../components/AnimateText";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex-1 flex items-center justify-center">
             <div className="text-center">
               <AnimateText>
-                <h1 className="max-w-5xl text-[50px] md:text-[100px] leading-[0.9] tracking-[-0.04em] font-semibold">
+                <h1 className="font-dirtylines max-w-5xl text-[50px] md:text-[100px] leading-[0.9] tracking-[-0.04em] font-semibold">
                   Crafting
                   <br />
                   Modern Digital
@@ -36,7 +36,7 @@ export default function Home() {
               </AnimateText>
 
               <AnimateText delay={0.8}>
-                <p className="text-lg md:text-xl text-background/70 max-w-xl mx-auto">
+                <p className="font-dirtyline text-lg md:text-xl text-background/70 max-w-xl mx-auto">
                   I design & build high-performance web interfaces with smooth
                   interactions and clean user experience.
                 </p>
