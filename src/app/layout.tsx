@@ -37,6 +37,10 @@ export default function RootLayout({
           lang="en"
           className={`dark ${poppins.className} ${dmMono.variable} ${aalto.variable} ${brentasignature.variable} ${gebuk.variable} ${lovine.variable} ${thought.variable} ${dirtyline.variable} h-full antialiased`}
         >
+          <head>
+            <link rel="stylesheet" href="/view-transition.css" />
+          </head>
+
           <body className="min-h-full flex flex-col">
             <Navbar />
             {children}
