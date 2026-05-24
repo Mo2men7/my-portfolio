@@ -1,16 +1,74 @@
 const mates = [
   {
-    name: "Ahmed Hesham",
-    role: "UI/UX Designer",
-    stack: "Figma · Design Systems",
-    project: "Sawi",
+    name: "yasmine megahed",
+    role: "Backend Developer",
+    stack: "Laravel · APIs",
     github: "#",
   },
   {
-    name: "Youssef Khaled",
+    name: "Amira Elsayed Abdelaziz",
     role: "Backend Developer",
     stack: "Laravel · APIs",
-    project: "RM Edelizia",
+    github: "#",
+  },
+  {
+    name: "Mohamed Gamal Zaid",
+    role: "Frontend Developer",
+    stack: "React · Next.js · TypeScript",
+    github: "#",
+  },
+  {
+    name: "Safa Adel",
+    role: "Backend Developer",
+    stack: "Laravel · APIs",
+    github: "#",
+  },
+  {
+    name: "Amr Badawy",
+    role: "Backend Developer",
+    stack: "Laravel · APIs",
+    github: "#",
+  },
+  {
+    name: "Aly Rady",
+    role: "Backend Developer",
+    stack: "Laravel · APIs",
+    github: "#",
+  },
+  {
+    name: "Abdelrahman Diab",
+    role: "Backend Developer",
+    stack: "Laravel · APIs",
+    github: "#",
+  },
+  {
+    name: "Mazen Rashad",
+    role: "Frontend Developer",
+    stack: "React · Next.js · TypeScript",
+    github: "#",
+  },
+  {
+    name: "Mohanad Hassan Hanafy",
+    role: "Frontend Developer",
+    stack: "React · Next.js · TypeScript",
+    github: "#",
+  },
+  {
+    name: "Mahmoud Kandil",
+    role: "DevOps Engineer",
+    stack: "Docker · Kubernetes · AWS",
+    github: "#",
+  },
+  {
+    name: "Ramadan Tantawy",
+    role: "Mobile Developer",
+    stack: "Flutter",
+    github: "#",
+  },
+  {
+    name: "Mahmoud Tawfek",
+    role: "Frontend Developer",
+    stack: "Angular · JavaScript",
     github: "#",
   },
 ];
@@ -43,7 +101,9 @@ export default function Mates() {
           >
             {/* TOP */}
             <div className="mb-6 flex items-center justify-between">
-              <p className="text-sm uppercase opacity-40">0{index + 1}</p>
+              <p className="text-sm uppercase opacity-40">
+                {index < 9 ? "0" + (index + 1) : index + 1}
+              </p>
 
               <a
                 href={mate.github}

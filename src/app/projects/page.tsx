@@ -1,32 +1,64 @@
+import Link from "next/link";
+
 function Projects() {
   const projects = [
     {
       title: "Sawi",
       year: "2026",
       type: "Invoices Platform",
-      image: "/img1.png",
+      image: "/projectsLogos/sawi.svg",
+      link: "https://sawi.me",
     },
     {
-      title: "RM Edelizia",
+      title: "Conch",
+      year: "2026",
+      type: "Motorcycles and parts e-commerce",
+      image: "/projectsLogos/conch.svg",
+      // link: "https://conch.qa",
+    },
+    {
+      title: "Infinity rent a car",
+      year: "2025",
+      type: "Car rental system",
+      image: "/projectsLogos/infinity-car-rental.png",
+      link: "https://infinityrentacar.qa",
+    },
+    {
+      title: "RM Edilizia",
       year: "2025",
       type: "Workers Dashboard",
-      image: "/img2.png",
+      image: "/projectsLogos/rm-edilizia.png",
+      link: "https://rmedilizia.com",
+    },
+    {
+      title: "Qaws",
+      year: "2025",
+      type: "Interviewing and hiring platform",
+      image: "/projectsLogos/qaws.png",
+      link: "https://qaws.ai",
+    },
+    {
+      title: "Infinity car services",
+      year: "2025",
+      type: "Car services website",
+      image: "/projectsLogos/infinity-car-services.png",
+      link: "https://infinitycarservices.qa",
     },
   ];
 
   return (
     <section className="px-6 py-20">
       <div className="mb-20">
-        {/* <p className="font-thought uppercase text-lg"> */}
         <h1 className="font-thought mt-4 text-[12vw] uppercase leading-[0.9]">
           Selected Projects
         </h1>
-        {/* </p> */}
       </div>
 
       <div className="flex flex-col">
         {projects.map((project, index) => (
-          <div
+          <Link
+            href={project.link ?? "#"}
+            target="_blank"
             key={index}
             className="group relative flex cursor-pointer items-center justify-between border-t border-white/10 py-10"
           >
@@ -51,10 +83,10 @@ function Projects() {
               <img
                 src={project.image}
                 alt=""
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
