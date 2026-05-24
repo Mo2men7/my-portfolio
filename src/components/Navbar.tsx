@@ -22,6 +22,9 @@ function Navbar() {
         <div>
           <NavbarLink href="/mates" label="Mates" />
         </div>
+        <div>
+          <NavbarLink href="/contact" label="Contact" />
+        </div>
       </div>
     </nav>
   );
