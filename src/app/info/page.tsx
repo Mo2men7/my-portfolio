@@ -6,7 +6,7 @@ function Info() {
   return (
     // info
     <div className="w-screen h-full min-h-svh flex overflow-hidden">
-      <div className="col">
+      <div className="hidden md:block col">
         <img
           src="/img1.png"
           alt="Avatar"
