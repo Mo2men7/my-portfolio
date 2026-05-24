@@ -4,9 +4,14 @@ import AnimateText from "@/components/AnimateText";
 
 function Info() {
   return (
-    <div className="info">
+    // info
+    <div className="w-screen h-full min-h-svh flex overflow-hidden">
       <div className="col">
-        <img src="/img1.png" alt="" />
+        <img
+          src="/img1.png"
+          alt="Avatar"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       <div className="col flex-col gap-[2em] h-screen">

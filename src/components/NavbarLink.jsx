@@ -46,12 +46,12 @@ export default function NavbarLink({ href, label }) {
 
   return (
     <Link
-      href={`/${href}`}
+      href={href}
       className="uppercase text-foreground text-[12px] font-bold p-[0.5em]"
       style={{ fontFamily: "'DM Mono', monospace" }}
       onClick={(e) => {
         e.preventDefault();
-        router.push(`/${href}`, {
+        router.push(href, {
           onTransitionReady: slideInOut,
         });
       }}
