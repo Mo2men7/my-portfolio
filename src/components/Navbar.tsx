@@ -14,6 +14,9 @@ function Navbar() {
 
       <div className="flex gap-[2em]">
         <div>
+          <NavbarLink href="/projects" label="Projects" />
+        </div>
+        <div>
           <NavbarLink href="/info" label="Info" />
         </div>
       </div>
