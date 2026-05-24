@@ -24,7 +24,7 @@ export default function Mates() {
           People I’ve built with
         </p>
 
-        <h1 className="mt-4 text-[12vw] uppercase leading-[0.9] tracking-[-0.08em] md:text-[7vw]">
+        <h1 className="font-thought mt-4 text-[12vw] uppercase leading-[0.9]">
           Mates
         </h1>
 

@@ -17,9 +17,11 @@ function Projects() {
   return (
     <section className="px-6 py-20">
       <div className="mb-20">
-        <p className="text-sm uppercase tracking-[0.3em] opacity-50">
+        {/* <p className="font-thought uppercase text-lg"> */}
+        <h1 className="font-thought mt-4 text-[12vw] uppercase leading-[0.9]">
           Selected Projects
-        </p>
+        </h1>
+        {/* </p> */}
       </div>
 
       <div className="flex flex-col">
