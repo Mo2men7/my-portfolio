@@ -47,7 +47,7 @@ export default function NavbarLink({ href, label }) {
   return (
     <Link
       href={href}
-      className="uppercase text-foreground text-[12px] font-bold p-[0.5em]"
+      className="uppercase text-foreground text-[12px] font-bold"
       style={{ fontFamily: "'DM Mono', monospace" }}
       onClick={(e) => {
         e.preventDefault();

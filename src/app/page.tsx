@@ -1,12 +1,12 @@
-"use client";
-
 import AnimateText from "../components/AnimateText";
 
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <AnimateText delay={1}>
-        <p className="text-center font-medium text-lg">Heeeeey, I'm</p>
+        <p className="text-center font-medium text-lg tracking-[0.3em]">
+          Hello — I'm
+        </p>
       </AnimateText>
 
       <AnimateText delay={1}>
@@ -16,9 +16,9 @@ export default function Home() {
       </AnimateText>
 
       <AnimateText delay={1}>
-        <p className="text-center font-medium text-lg">
-          A front-end developer crafts <span className="uppercase">bold</span>{" "}
-          experiences
+        <p className="max-w-[700px] text-center text-lg font-medium">
+          A front-end developer crafting <span className="uppercase">bold</span>
+          , interactive, and performance-focused digital experiences.
         </p>
       </AnimateText>
     </div>
