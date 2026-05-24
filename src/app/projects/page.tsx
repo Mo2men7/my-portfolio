@@ -4,11 +4,13 @@ function Projects() {
       title: "Sawi",
       year: "2026",
       type: "Invoices Platform",
+      image: "/img1.png",
     },
     {
       title: "RM Edelizia",
       year: "2025",
       type: "Workers Dashboard",
+      image: "/img2.png",
     },
   ];
 
@@ -45,7 +47,7 @@ function Projects() {
             {/* FLOATING IMAGE */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 z-10 h-[300px] w-[240px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl opacity-0 transition duration-500 group-hover:opacity-100">
               <img
-                src="/img1.png"
+                src={project.image}
                 alt=""
                 className="h-full w-full object-cover"
               />
