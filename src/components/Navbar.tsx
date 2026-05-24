@@ -19,6 +19,9 @@ function Navbar() {
         <div>
           <NavbarLink href="/info" label="Info" />
         </div>
+        <div>
+          <NavbarLink href="/mates" label="Mates" />
+        </div>
       </div>
     </nav>
   );
