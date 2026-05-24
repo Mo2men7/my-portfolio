@@ -1,3 +1,5 @@
+"use client";
+
 import AnimateText from "../components/AnimateText";
 
 export default function Home() {
