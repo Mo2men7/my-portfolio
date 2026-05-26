@@ -1,10 +1,46 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { toast } from "sonner";
 
 const email = "momen.helmy.m@gmail.com";
 const github = "https://github.com/Mo2men7";
 const linkedin = "https://www.linkedin.com/in/momenhelmyy";
 
 export default function Contact() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event: any) => {
+    event.preventDefault();
+
+    toast.loading("Sending message...");
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "aa2e297b-adc1-4522-8227-2147519fd4b2");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    toast.dismiss();
+
+    if (data.success) {
+      toast.success("Message sent.", {
+        description: "I’ll get back to you soon.",
+      });
+      event.target.reset();
+    } else {
+      toast.error("Something went wrong.", {
+        description: "Please try again later.",
+      });
+    }
+  };
+
   return (
     <section className="flex min-h-screen flex-col justify-between px-6 py-10 pt-20 md:px-10">
       <div className="flex items-center justify-between text-sm uppercase opacity-40">
@@ -28,20 +64,29 @@ export default function Contact() {
           my inbox is always open.
         </p>
 
-        <form className="mt-16 flex max-w-[700px] flex-col gap-10">
+        <form
+          onSubmit={onSubmit}
+          className="mt-16 flex max-w-[700px] flex-col gap-10"
+        >
           <input
+            required
             type="text"
+            name="name"
             placeholder="Your name"
             className="border-b border-foreground/20 bg-transparent pb-4 text-xl outline-none placeholder:text-foreground/30 focus:border-foreground"
           />
 
           <input
+            required
             type="email"
+            name="email"
             placeholder="Your email"
             className="border-b border-foreground/20 bg-transparent pb-4 text-xl outline-none placeholder:text-foreground/30 focus:border-foreground"
           />
 
           <textarea
+            required
+            name="message"
             placeholder="Tell me about your project"
             rows={4}
             className="resize-none border-b border-foreground/20 bg-transparent pb-4 text-xl outline-none placeholder:text-foreground/30 focus:border-foreground"

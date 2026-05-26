@@ -16,6 +16,7 @@ import {
   lovine,
   thought,
 } from "@/lib/fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Momen Helmy",
@@ -44,6 +45,7 @@ export default function RootLayout({
           <body className="min-h-full flex flex-col">
             <Navbar />
             {children}
+            <Toaster position="top-center" theme="dark" />
           </body>
         </html>
       </ReactLenis>
