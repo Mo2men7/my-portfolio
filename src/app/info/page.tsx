@@ -605,7 +605,7 @@ function Info() {
       </div>
 
       {/* CONTENT */}
-      <div className="col flex-col gap-[2em] h-screen">
+      <div className="col flex-col gap-[2em] min-h-screen overflow-x-hidden">
         <AnimateText delay={1}>
           <p className="text-lg">
             Front-End Developer specializing in React, Next.js, and modern web
@@ -619,7 +619,7 @@ function Info() {
 
         {/* STACK */}
         <AnimateText delay={1.15}>
-          <div className="ms-4">
+          <div className="md:ms-4">
             <p className="mb-4 uppercase text-xs tracking-widest opacity-40">
               Main Stack
             </p>
@@ -652,14 +652,16 @@ function Info() {
           </div>
         </AnimateText>
 
-        <AnimateText delay={1.3}>
-          <p className="text-lg">
-            Beyond code and screens, I enjoy chess, running, gym sessions, and
-            meaningful conversations. I believe the best connections don't
-            always start with work — sometimes they start with shared interests,
-            good energy, and real friendship.
-          </p>
-        </AnimateText>
+        <div className="hidden md:block">
+          <AnimateText delay={1.3}>
+            <p className="text-lg">
+              Beyond code and screens, I enjoy chess, running, gym sessions, and
+              meaningful conversations. I believe the best connections don't
+              always start with work — sometimes they start with shared
+              interests, good energy, and real friendship.
+            </p>
+          </AnimateText>
+        </div>
       </div>
     </div>
   );
