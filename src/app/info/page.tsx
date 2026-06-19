@@ -105,7 +105,7 @@ const Authjs = (props: any) => (
     />
     <path
       fill="url(#authjs__c)"
-      fill-opacity=".21"
+      fillOpacity=".21"
       d="M111.74 1.283C108.147.257 105.11 0 104.04 0l-.321 231.305h.642c1.54 0 4.064-.855 5.133-1.283 76.995-25.665 98.169-129.822 99.131-178.692V33.685c0-2.566-2.78-4.063-4.171-4.491-29.407-8.876-89.121-26.884-92.714-27.91Z"
     />
     <ellipse cx="104.905" cy="114.209" fill="#E3E2FA" rx="47.801" ry="47.48" />
@@ -502,7 +502,7 @@ const TanStack = (props: any) => (
         cx="308.5"
         cy="720.5"
         stroke="#6DA300"
-        stroke-opacity=".502"
+        strokeOpacity=".502"
         strokeWidth="26"
         mask="url(#tanstack__c)"
         rx="253"
@@ -516,7 +516,7 @@ const TanStack = (props: any) => (
             cy="113.5"
             r="106"
             stroke="#FFC900"
-            stroke-opacity=".529"
+            strokeOpacity=".529"
             strokeWidth="15"
           />
           <path
@@ -641,7 +641,7 @@ function Info() {
                       fontFamily: "'DM Mono', monospace",
                       fontSize: "12px",
                       letterSpacing: "0.05em",
-                      color: "rgba(255,255,255,0.7)",
+                      // color: "rgba(255,255,255,0.7)",
                     }}
                   >
                     {tech.name}

@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1a1a1a;
-  --foreground: #fff;
+  --background: #043222;
+  --foreground: #f6e9d9;
+
+  /* 
+    --background: #043222;
+    --foreground: #f6e9d9;
+
+    --background: #f0d0b8;
+    --foreground: #181a43;
+
+    --background: #004741;
+    --foreground: #f0ede4;
+
+    --background: #5e4074;
+    --foreground: #f7f9ec;
+   */
 }
 
 .font-aalto {
