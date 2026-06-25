@@ -9,29 +9,39 @@ const github = "https://github.com/Mo2men7";
 const linkedin = "https://www.linkedin.com/in/momenhelmyy";
 
 export default function Contact() {
-  const [result, setResult] = useState("");
-
   const onSubmit = async (event: any) => {
     event.preventDefault();
-
     toast.loading("Sending message...");
 
     const formData = new FormData(event.target);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
 
-    formData.append("access_key", "aa2e297b-adc1-4522-8227-2147519fd4b2");
+    formData.append(
+      "access_key",
+      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!,
+    );
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    const [web3Response, telegramResponse] = await Promise.all([
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      }),
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      }),
+    ]);
 
-    const data = await response.json();
+    const web3Data = await web3Response.json();
 
     toast.dismiss();
 
-    if (data.success) {
+    if (web3Data.success) {
       toast.success("Message sent.", {
-        description: "I’ll get back to you soon.",
+        description: "I'll get back to you soon.",
       });
       event.target.reset();
     } else {
