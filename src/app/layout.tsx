@@ -1,21 +1,9 @@
 import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
-
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import ReactLenis from "lenis/react";
 // import { ReactLenis } from "lenis/react";
-
-import {
-  dmMono,
-  poppins,
-  dirtyline,
-  aalto,
-  brentasignature,
-  gebuk,
-  lovine,
-  thought,
-} from "@/lib/fonts";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
@@ -34,10 +22,7 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <ReactLenis root>
-        <html
-          lang="en"
-          className={`dark ${poppins.className} ${dmMono.variable} ${aalto.variable} ${brentasignature.variable} ${gebuk.variable} ${lovine.variable} ${thought.variable} ${dirtyline.variable} h-full antialiased`}
-        >
+        <html lang="en" className={`dark h-full antialiased`}>
           <head>
             <link rel="stylesheet" href="/view-transition.css" />
           </head>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { toast } from "sonner";
 
-const email = "momen.helmy.m@gmail.com";
+const myMail = "momen.helmy.m@gmail.com";
 const github = "https://github.com/Mo2men7";
 const linkedin = "https://www.linkedin.com/in/momenhelmyy";
 
@@ -112,7 +112,7 @@ export default function Contact() {
       </div>
 
       <div className="mt-20 flex flex-wrap items-center justify-between gap-6 text-sm uppercase opacity-40">
-        <Link href={`mailto:${email}`}>Email</Link>
+        <Link href={`mailto:${myMail}`}>Email</Link>
 
         <div className="flex gap-6">
           <Link href={`${github}`} target="_blank">
